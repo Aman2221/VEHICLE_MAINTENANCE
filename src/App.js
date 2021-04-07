@@ -16,7 +16,6 @@ import TrackVehicle from './Admin/TrackVehicle'
 
 const App = () => {
   const [{user}] = useStateValue();
-  console.log(process.env)
   return (
     <div className='app'>
     { !user ? (
