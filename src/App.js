@@ -46,7 +46,7 @@ const App = () => {
             <Route exact path='/driver_register'>
               <DriverRegistrations />
             </Route>
-            <Route exact path='/fuel_biils'>
+            <Route exact path='/fuel_bills'>
               <FuelBiils />
             </Route>
             <Route exact path='/View_drivers'>
