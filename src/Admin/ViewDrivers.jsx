@@ -30,19 +30,19 @@ const ViewDrivers = () => {
             <div className="data">
             <ul>
             <li>
-            <h5><i className='bx bxs-calendar-check'></i>Driver Name</h5>
+            <h5 className='table_head'><i className='bx bxs-calendar-check'></i>Name</h5>
                 {
                 data.map((item) => (
-                        <p>
+                        <p className='table_data'>
                         {item.name}
                         </p>  
                 ))}
             </li>
-            <li id='email_admin'>
-                <h5><i className='bx bx-time'></i>Vehicle No</h5>
+            <li>
+                <h5 className='table_head'><i className='bx bx-time'></i>Vehicle</h5>
                 {
                 data.map((item) => (
-                    <p>
+                    <p className='table_data'>
                     {item.vehicle_no}
                     </p>  
                 ))}
@@ -50,25 +50,25 @@ const ViewDrivers = () => {
             </li>
             
             <li >
-                <h5><i className="far fa-envelope"></i>Email</h5>
+                <h5 className='table_head'><i className="far fa-envelope"></i>Email</h5>
                 {data.map((item) => (
-                    <p>
+                    <p className='table_data'>
                     {item.email}
                     </p>  
                 ))}
             </li>
             <li >
-                <h5><i className="far fa-envelope"></i>Contacts</h5>
+                <h5 className='table_head'><i className="far fa-envelope"></i>Contacts</h5>
                 {data.map((item) => (
-                    <p>
+                    <p className='table_data'>
                     {item.contact}
                     </p>  
                 ))}
             </li>
-            <li >
-                <h5><i className="far fa-envelope"></i>Age</h5>
+            <li className='d-none' id='d_none'>
+                <h5 className='table_head'><i className="far fa-envelope"></i>Age</h5>
                 {data.map((item) => (
-                    <p>
+                    <p className='table_data'>
                     {item.age}
                     </p>  
                 ))}

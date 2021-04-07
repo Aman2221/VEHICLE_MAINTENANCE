@@ -9,3 +9,37 @@
 .loginHeading {
   margin-left: 180px;
 }
+
+.googleImg {
+  height: 20px;
+  object-fit: contain;
+}
+
+.gooleLoginBtn {
+  position: relative;
+  left: 270px;
+}
+
+@media screen and (max-width: 480px) {
+  .login {
+    width: 100%;
+  }
+
+  .login_registerBtns {
+    display: flex;
+  }
+
+  .loginHeading {
+    margin-left: 180px;
+  }
+
+  .googleImg {
+    height: 20px;
+    object-fit: contain;
+  }
+
+  .gooleLoginBtn {
+    position: relative;
+    left: 100px;
+  }
+}

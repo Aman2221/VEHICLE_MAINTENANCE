@@ -29,3 +29,40 @@
   background-color: #e97878;
   cursor: pointer;
 }
+
+@media screen and (max-width: 480px) {
+  .home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    flex-direction: column;
+  }
+  .home > h5 {
+    font-size: 18px;
+  }
+  .service_fule {
+    margin-top: 20px;
+    display: flex;
+  }
+  .service p {
+    text-decoration: none !important;
+    color: black;
+  }
+  .fuel p {
+    text-decoration: none !important;
+    color: black;
+  }
+  .service,
+  .fuel {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 1px solid lightgrey;
+    background-color: #e97878;
+    cursor: pointer;
+  }
+}

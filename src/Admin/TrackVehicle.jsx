@@ -19,29 +19,29 @@ const TrackVehicle = () => {
              <div className="data">
             <ul>
             <li>
-            <h5><i className='bx bxs-calendar-check'></i>Accuracy</h5>
+            <h5 className='table_head'><i className='bx bxs-calendar-check'></i>Accuracy</h5>
                 {
                 location.map((item) => (
-                        <p>
+                        <p className='table_data'>
                         {item.accuracy}
                         </p>  
                 ))}
             </li>
             <li id='email_admin'>
-                <h5><i className='bx bx-time'></i>Latitude</h5>
+                <h5 className='table_head'><i className='bx bx-time'></i>Latitude</h5>
                 {
                 location.map((item) => (
-                    <p>
+                    <p className='table_data'>
                     {item.latitude}
                     </p>  
                 ))}
                 
             </li>
             <li >
-                <h5><i className="far fa-envelope"></i>Longitude</h5>
+                <h5 className='table_head'><i className="far fa-envelope"></i>Longitude</h5>
                 {
                     location.map((item) => (
-                    <p>
+                    <p className='table_data'>
                     {item.longitude}
                     </p>  
                 ))}

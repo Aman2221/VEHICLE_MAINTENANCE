@@ -11,7 +11,8 @@ const Nav = () => {
                 <div className="nav-wrapper">
                 <Link to='/home' id='logoText' className="brand-logo left">
                 <img className='headerLogo' src={logo} alt="logo"/>
-                Vehicle Maintenance</Link>
+                <span id='logoText'>Vehicle Maintenance</span>
+                </Link>
                 <ul id="nav-mobile" className=" right hide-on-med-and-down">
                     <li><Link to='/home'><Button variant="outlined">Home</Button></Link></li>
                     <li><Link to='/service'><Button variant="outlined">Service</Button></Link></li>

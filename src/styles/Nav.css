@@ -11,3 +11,20 @@
   padding-right: 5px;
   object-fit: contain;
 }
+
+@media screen and (max-width: 480px) {
+  #logoText {
+    letter-spacing: 0px;
+  }
+  .headerLogo {
+    height: 30px;
+    position: relative;
+    top: 6px;
+    padding-left: 4px;
+    padding-right: 5px;
+    object-fit: contain;
+  }
+  #logoText {
+    font-size: 20px !important;
+  }
+}

@@ -19,19 +19,19 @@ const FuelBiils = () => {
            <div className="data">
             <ul>
             <li>
-            <h5><i className='bx bxs-calendar-check'></i>Driver Name</h5>
+            <h5 className='table_head'><i className='bx bxs-calendar-check'></i>Driver Name</h5>
                 {
                 fueldata.map((item) => (
-                        <p>
+                        <p className='table_data'>
                         {item.driver_name}
                         </p>  
                 ))}
             </li>
-            <li id='email_admin'>
-                <h5><i className='bx bx-time'></i>Vehicle No</h5>
+            <li >
+                <h5 className='table_head'><i className='bx bx-time'></i>Vehicle</h5>
                 {
                 fueldata.map((item) => (
-                    <p>
+                    <p className='table_data'>
                     {item.vehicle_no}
                     </p>  
                 ))}
@@ -39,28 +39,28 @@ const FuelBiils = () => {
             </li>
             
             <li >
-                <h5><i className="far fa-envelope"></i>Bill Number</h5>
+                <h5 className='table_head'><i className="far fa-envelope"></i>Bill NO</h5>
                 {
                     fueldata.map((item) => (
-                    <p>
+                    <p className='table_data'>
                     {item.bill_no}
                     </p>  
                 ))}
             </li>
             <li >
-                <h5><i className="far fa-envelope"></i>Amount</h5>
+                <h5 className='table_head'><i className="far fa-envelope"></i>Amount</h5>
                 {
                     fueldata.map((item) => (
-                    <p>
+                    <p className='table_data'>
                     {item.amount}
                     </p>  
                 ))}
             </li>
             <li >
-                <h5><i className="far fa-envelope"></i>Date</h5>
+                <h5 className='table_head'><i className="far fa-envelope"></i>Date</h5>
                 {
                     fueldata.map((item) => (
-                    <p>
+                    <p className='table_data'>
                     {item.date}
                     </p>  
                 ))}

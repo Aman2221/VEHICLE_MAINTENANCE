@@ -20,38 +20,38 @@ const MaintananceBills = () => {
             <div className="data">
             <ul>
             <li>
-            <h5><i className='bx bxs-calendar-check'></i>Driver Name</h5>
+            <h5 className='table_head'><i className='bx bxs-calendar-check'></i>Driver Name</h5>
                 {
                 Servicedata.map((item) => (
-                        <p>
+                        <p className='table_data'>
                         {item.driver_name}
                         </p>  
                 ))}
             </li>
-            <li id='email_admin'>
-                <h5><i className='bx bx-time'></i>Bill No</h5>
+            <li>
+                <h5 className='table_head'><i className='bx bx-time'></i>Bill No</h5>
                 {
                 Servicedata.map((item) => (
-                    <p>
+                    <p className='table_data'>
                     {item.bill_no}
                     </p>  
                 ))}
                 
             </li>
             <li >
-                <h5><i className="far fa-envelope"></i>Amount</h5>
+                <h5 className='table_head'><i className="far fa-envelope"></i>Amount</h5>
                 {
                     Servicedata.map((item) => (
-                    <p>
+                    <p className='table_data'>
                     {item.amount}
                     </p>  
                 ))}
             </li>
             <li >
-                <h5><i className="far fa-envelope"></i>Date</h5>
+                <h5 className='table_head'><i className="far fa-envelope"></i>Date</h5>
                 {
                     Servicedata.map((item) => (
-                    <p>
+                    <p className='table_data'>
                     {item.date}
                     </p>  
                 ))}

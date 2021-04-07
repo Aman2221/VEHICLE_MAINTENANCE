@@ -37,30 +37,25 @@
   left: 825px;
   top: 73px;
 }
-@media screen and (max-width: 468px) {
-  .viewDrivers {
-    justify-content: center;
-  }
+
+@media screen and (max-width: 480px) {
   .viewDrivers ul {
-    border: none;
-    flex-direction: column;
-    gap: 0px;
+    border: 1px solid;
+    gap: 10px;
+    width: 100%;
+    padding-left: 4px;
+    padding-right: 4px;
   }
-  .viewDrivers ul li {
-    width: max-content;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
+  .table_head {
+    font-size: 10px !important;
   }
-  .data .fa-envelope {
-    position: absolute;
-    font-size: 14.5px;
-    left: 167px;
-    top: 467px;
+  .table_data {
+    font-size: 8px;
   }
-  #email_admin {
-    position: relative;
-    left: 20px;
+  .d-none {
+    display: none;
+  }
+  #d_none {
+    display: none;
   }
 }

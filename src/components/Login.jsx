@@ -1,8 +1,10 @@
 import React,{ useState } from 'react'
 import '../styles/Login.css'
 import { Button, Link } from '@material-ui/core'
-import { auth } from '../firebase.js'
+import { auth, provider } from '../firebase.js'
 import { useStateValue } from '../StateProvider'
+import Google from '../img/Google.png'
+
 const Login = () => {
 
     const [email, setEmail] = useState();
@@ -25,7 +27,22 @@ const Login = () => {
         .catch((e) => {
             alert(e.message);
         })
-            console.log(DATA);
+    }
+
+    const handleGoogleLogin = () =>{
+        auth.signInWithPopup(provider).then((result) => {
+            dispatch({
+                type : 'SET_DATA',
+                user : result.user,
+                DATA : {
+                    email : result.user.email,
+                    vehicleNo : vehicleNo
+                }
+            })
+        })
+        .catch((e) => {
+            console.log(e.message)
+        })
     }
     return (
         <div className='login'>
@@ -64,7 +81,9 @@ const Login = () => {
                 </div>
                 <div className="login_registerBtns">
                     <Button type='submit' onClick={handleLogin} variant="contained" color="secondary">Login</Button>
-                    
+                    <Button className='gooleLoginBtn' type='button' onClick={handleGoogleLogin} variant="contained">
+                    <img className='googleImg' src={Google} alt="Google"/>
+                    </Button>
                 </div>
                 </form>
             </div>    

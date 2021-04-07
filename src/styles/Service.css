@@ -1,0 +1,10 @@
+.Service_Page > h3 {
+  text-transform: uppercase;
+}
+
+@media screen and (max-width: 480px) {
+  .Service_Page > h3 {
+    text-transform: uppercase;
+    font-size: 24px;
+  }
+}

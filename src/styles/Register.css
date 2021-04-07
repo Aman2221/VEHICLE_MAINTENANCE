@@ -4,3 +4,12 @@
 .register h3 {
   margin-left: 150px;
 }
+.driver_reg > h3 {
+  text-transform: uppercase;
+}
+
+@media screen and (max-width: 480px) {
+  .driver_reg > h3 {
+    font-size: 18px;
+  }
+}
