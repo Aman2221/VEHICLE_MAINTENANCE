@@ -1,0 +1,31 @@
+.home {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  flex-direction: column;
+}
+.service_fule {
+  margin-top: 20px;
+  display: flex;
+}
+.service p {
+  text-decoration: none !important;
+  color: black;
+}
+.fuel p {
+  text-decoration: none !important;
+  color: black;
+}
+.service,
+.fuel {
+  width: 150px;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border: 1px solid lightgrey;
+  background-color: #e97878;
+  cursor: pointer;
+}

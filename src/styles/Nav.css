@@ -1,0 +1,13 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald&display=swap");
+#logoText {
+  font-family: "Oswald", sans-serif !important;
+  letter-spacing: 1px;
+}
+.headerLogo {
+  height: 40px;
+  position: relative;
+  top: 6px;
+  padding-left: 10px;
+  padding-right: 5px;
+  object-fit: contain;
+}

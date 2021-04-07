@@ -1,0 +1,11 @@
+.login {
+  width: 100%;
+}
+
+.login_registerBtns {
+  display: flex;
+}
+
+.loginHeading {
+  margin-left: 180px;
+}
