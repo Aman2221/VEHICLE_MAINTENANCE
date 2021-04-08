@@ -6,7 +6,6 @@ import { useStateValue } from '../StateProvider'
 import Google from '../img/Google.png'
 
 const Login = () => {
-
     const [email, setEmail] = useState();
     const [password, setPassword] = useState();
     const [vehicleNo, setVehicleNo] = useState();

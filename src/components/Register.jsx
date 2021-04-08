@@ -58,12 +58,12 @@ const Register = () => {
                 <div className="row">
                     <div className=" input-field col s5">
                     <input 
-                        id="email" 
+                        id="Remail" 
                         type="email" 
                         className="validate"
                         onChange= {(e) => setEmail(e.target.value)}
                      />
-                    <label htmlFor="email">Email</label>
+                    <label htmlFor="Remail">Email</label>
                     </div>
                 </div> 
                 <div className="row">
